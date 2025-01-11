@@ -1,100 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cody Stone</title>
-  <style>
-    /* Reset default styles */
-    body, h1, p, ul {
-      margin: 0;
-      padding: 0;
-    }
-    
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.5;
-      background-color: #222;
-      color: #eee;
-    }
-    
-    .container {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    
-    .card {
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      border-radius: 8px; /* Rounded corners */
-      overflow: hidden;
-      background-color: #333;
-      margin-top: 60px; /* Increased padding between photo and top */
-    }
-    
-    .card-img-top {
-      width: 30%; /* Adjust this value as needed */
-      height: auto;
-      margin: auto;
-      display: block;
-      border-radius: 8px; /* Rounded corners */
-    }
-    
-    .card-body {
-      padding: 20px;
-    }
-    
-    .card-content {
-      text-align: center;
-    }
-    
-    h2 {
-      margin: 10px 0;
-      color: #fff;
-    }
-    
-    .lead {
-      margin-bottom: 20px;
-    }
-    
-    .social-links {
-      margin-top: 20px;
-    }
-    
-    .social-links ul {
-      list-style: none;
-      padding: 0;
-    }
-    
-    .social-links li {
-      display: inline-block;
-      margin-right: 10px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/uikit.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/uikit.js"></script>
+    <script src="js/uikit-icons.js"></script>
+
+    <title>Portfolio</title>
 </head>
 <body>
-  <div class="container">
-    <section id="profile-card">
-      <div class="row">
-        <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-12">
-          <div class="card shadow">
-            <img class="card-img-top" src="assets/images/profile.jpg" alt="">
-            <div class="card-body">
-              <div class="card-content">
-                <h2>Cody Stone</h2>
-                <p class="lead">Passionate professional living at the intersection of people and technology.<br>codyhstone [at] gmail [dot] com</p>
-                <!-- <a href="resume.pdf">Resume</a> -->
-                <div class="social-links">
-                  <ul>
-                    <!-- Add your social links here -->
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
+<!-- Navigation Bar -->
+    <nav class="uk-navbar-container uk-margin-small-left uk-margin-small-right uk-visible@m uk-margin-xlarge-left uk-margin-xlarge-right" uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    
+    <div class="uk-navbar-left">
+        <a href="" class="uk-navbar-item uk-logo uk-light">Cody Stone</a>
+    </div>
+    <div class="uk-navbar-right">
+
+        <ul class="uk-navbar-nav uk-light">
+            <li><a class="uk-button-text uk-text-capitalize" href="https://www.codystone.me/resume.pdf" uk-scroll>Resumé/CV</a></li>
+            <li><a class="uk-button-text uk-text-capitalize" href="mailto:codyhstone@gmail.com" uk-scroll>Contact</a></li>
+        </ul>
+
+    </div>
+</nav>
+<!-- Navigation Bar Ends  -->
+
+<!-- Navigation Bar Mobile -->
+<nav class="uk-navbar-container uk-margin-small-left uk-margin-small-right uk-hidden@m uk-margin-xlarge-left uk-margin-xlarge-right" uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    
+    <div class="uk-navbar-left">
+        <a href="" class="uk-navbar-item uk-logo uk-light">Cody Stone</a>
+    </div>
+    <div class="uk-navbar-right">
+
+        <ul class="uk-navbar-nav uk-light">
+            <li><button uk-toggle="target: #offcanvas-nav" type="button" uk-navbar-toggle-icon></button></li>
+
+        </ul>
+
+    </div>
+</nav>
+<!-- Change This -->
+<div id="offcanvas-nav" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+            <li class="uk-active"><a href="https://www.codystone.me/" uk-scroll>Home</a></li>
+            <li class="uk-active"><a href="https://www.codystone.me/resume.pdf" uk-scroll>Resumé/CV</a></li>
+            <li class="uk-active"><a href="mailto:codyhstone@gmail.com">Contact</a></li> <!--- change to ur email-->
+
+        </ul>
+
+
+
+
+    </div>
+</div>
+
+<!-- Navigation Bar Mobile Ends -->
+<!-- Home -->
+<section class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
+    <div style="text-align: center;">
+        <img 
+            src="headshot.png" 
+            alt="A photo of Cody" 
+            class="uk-margin-large-top uk-margin-large-bottom" 
+            style="border-radius: 15px; max-width: 25%; min-width: 150px; height: auto;">
+    </div>
+    <h1 class="uk-margin-xlarge-left uk-light uk-text-left uk-margin-xlarge-right">
+        I'm Cody. Payroll technologist, people person, and relentless problem solver.
+    </h1>
+    
+</section>
+
+
+
+<!-- Home Ends -->
+
+<hr class="uk-margin-xlarge-top uk-margin-xlarge-left uk-margin-xlarge-right">
+
+<!-- About Me -->
+<section id="about" class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
+<h3 class="uk-margin-xlarge-left uk-light">About Me</h3>
+<!-- Change here to ur paragraph -->
+<p class="uk-margin-xlarge-left uk-margin-xlarge-right">I’m a dynamic professional with expertise in bridging people and technology. I’ve built a career on solving complex challenges, fostering strong relationships, and driving efficiency. Whether automating workflows or managing large-scale partnerships, I’m passionate about creating meaningful impact through innovation and collaboration. <br> With roots in emergency medicine, I know the importance of getting it right the first time. I have a love for data, precise language, tight communications, and I'm always learning something now, and my love language is a spreadsheet.</p><br>
+<a href="https://www.codystone.me" class="uk-margin-xlarge-left uk-light uk-button-text" uk-icon="dribbble"></a> &nbsp;<a href="https://github.com/cody" class="uk-button-text uk-light" uk-icon="github"></a>
+
+<!-- About Me Ends -->
+
+
+
+
+</section>
 </body>
 </html>
